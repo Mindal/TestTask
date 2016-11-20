@@ -1,0 +1,7 @@
+CREATE TABLE `problem` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `description` varchar(255) NOT NULL,
+  `is_done` bit(1) NOT NULL DEFAULT b'0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `description_UNIQUE` (`description`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
